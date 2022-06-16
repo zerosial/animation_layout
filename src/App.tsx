@@ -14,15 +14,15 @@ const Wrapper = styled.div`
 const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  width: 50vw;
+  grid-template-rows: repeat(2, 1fr);
   gap: 10px;
 `;
 
 const Box = styled(motion.div)`
+  height: 30vh;
+  width: 20vw;
   background-color: rgba(255, 255, 255, 1);
   border-radius: 10px;
-  width: 400px;
-  height: 250px;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.06);
   background-color: rgba(255, 255, 255, 0.5);
   display: flex;
@@ -66,8 +66,8 @@ function App() {
           layoutId={"1"}
           whileHover={{
             scale: 1.1,
-            translateX: -20,
-            translateY: -15,
+            originX: 1,
+            originY: 1,
             backgroundColor: "rgba(255, 255, 255, 0.7)",
           }}
         ></Box>
@@ -77,8 +77,8 @@ function App() {
           layoutId={"2"}
           whileHover={{
             scale: 1.1,
-            translateX: 20,
-            translateY: -15,
+            originX: 0,
+            originY: 1,
             backgroundColor: "rgba(255, 255, 255, 0.7)",
           }}
         >
@@ -90,8 +90,8 @@ function App() {
           layoutId={"3"}
           whileHover={{
             scale: 1.1,
-            translateX: -20,
-            translateY: 15,
+            originX: 1,
+            originY: 0,
             backgroundColor: "rgba(255, 255, 255, 0.7)",
           }}
         >
@@ -103,8 +103,8 @@ function App() {
           layoutId={"4"}
           whileHover={{
             scale: 1.1,
-            translateX: 20,
-            translateY: 15,
+            originX: 0,
+            originY: 0,
             backgroundColor: "rgba(255, 255, 255, 0.7)",
           }}
         ></Box>
