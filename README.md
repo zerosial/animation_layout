@@ -1,14 +1,11 @@
-# React Masterclass
+# Css templite
 
-Learn and dominate the React ecosystem once and for all.
+Css 격자를 만들고 스타일에 따라 기능을 추가한다.
 
 ### Using:
 
 - Styled Components
-- Recoil
-- React Query
-- React Router DOM
-- Apex Charts
-- React Spring
+- React
 - Typescript
+- Framer Motion
 - Firebase
